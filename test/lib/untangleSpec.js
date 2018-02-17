@@ -9,7 +9,8 @@ describe('lib untangle', function() {
       undefined,
       null,
       'string',
-      1
+      1,
+      [[1,2,[3,'bad','egg']]]
     ]).it(
       'invalid input',
       function (done, bad) {
@@ -30,8 +31,8 @@ describe('lib untangle', function() {
       [[[1,2],[[3,4],5]],[1,2,3,4,5]]
     ]).it(
       'valid input',
-      function (done, input, output) {
-        SUT(input).should.be.deep.equal(output);
+      function (done, input, expected) {
+        SUT(input).should.be.deep.equal(expected);
         done();
       }
     );
