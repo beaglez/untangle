@@ -2,6 +2,7 @@
 
 const SUT = require(`${BASEDIR}/lib/untangle`);
 const withData = require('mocha-testdata').async;
+const {INPUT_ERROR_MESSAGE} = require('../../lib/constant');
 
 describe('lib untangle', function() {
   describe('test validations', function() {
@@ -16,7 +17,7 @@ describe('lib untangle', function() {
       function (done, bad) {
         expect(() => {
           SUT(bad);
-        }).to.throw('please pass in an array of integers as input');
+        }).to.throw(INPUT_ERROR_MESSAGE);
         done();
       }
     );
