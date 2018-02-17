@@ -28,6 +28,10 @@ Please make sure to have the latest [Nodejs](http://www.npmjs.org/) installed (6
 * Don't forget to navigate to the cloned folder: `cd untangle`
 * Install: `npm i`
 
+**Source Control**
+
+Please follow [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) religiously!
+
 **Commands:**
 
 `npm start <array>` - Runs the program. eg: npm start [1,[2,3]]
