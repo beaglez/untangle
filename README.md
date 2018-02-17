@@ -34,4 +34,4 @@ Please make sure to have the latest [Nodejs](http://www.npmjs.org/) installed (6
 
 `npm run debug <array>` - Runs the program. eg: npm run debug [1,[2,3]]
 
-`npm test` - Runs unit test quite
+`npm test` - Runs unit test suite
